@@ -8,10 +8,10 @@
 
 
 let userPreference = 'Sugar-free';
-
-if (userPreference === '') {
+let preference = (userPreference === "")
+if (userPreference === 'regular') {
     console.log("prefer regular flavor?");
-} else if (userPreference = '') {
+} else if (userPreference = 'regular') {
     console.log("Prefer Sugar-free flavor.");
 } else {
     console.log("Flavor undefined");
@@ -26,12 +26,12 @@ if (userPreference === '') {
 // Use a ternary operator to print "Time to restock!" if the number is less than 5, or "We're stocked!" if the number is 5 or more.
 
 let cansLeft = 24; // Any number of cans
-let stock = (cansLeft <= 5) ? `Time to restock!` : "We're stocked!";
+let stock = (cansLeft <= 5) ? "Time to restock!" : "We're stocked!";
 console.log(stock)
 //if (cansLeft <= 5){
 //console.log(`Time to restock!`);
 //} else if (cansLeft > 5) {
-  //  console.log("We're stocked!");
+//  console.log("We're stocked!");
     
 //}
 
@@ -44,9 +44,9 @@ let heartBeat = (heartRate < 100) ? "Boost needed!" : "Energy levels are high!";
 console.log(heartBeat)
 
 //if (heartRate < 100) {  
-   // console.log("Boost needed!");
+// console.log("Boost needed!");
 //} else {
-  //  console.log("Energy levels are high!");
+//  console.log("Energy levels are high!");
 //}
 //console.log(`'}`);
 
@@ -58,11 +58,11 @@ console.log(heartBeat)
 let currentTemp = 44; // Current temperature in °C
 
 let temperature = (currentTemp <= 5) ? "Chilled to perfection!" : "Needs a cooler!";
-console.log(temperature)
+console.log(temperature);
 //if (currentTemp <= 5) {
-  //  console.log("Chilled to perfection!");
+//  console.log("Chilled to perfection!");
 //} else if (currentTemp > 5) {
-  //  console.log("Needs a cooler!");
+//  console.log("Needs a cooler!");
     
 
 
@@ -73,9 +73,11 @@ console.log(temperature)
 // otherwise, print "Better stick to water."
 
 // Define the current hour in 24-hour format
-let currentHour = 2; 
+let currentHour = "morning";
+let userEnergyLevel = 70; 
 
-
+let time = (currentHour === "morning" && userEnergyLevel < 50) ? "Unleash the beast!" : "Better stick to water.";
+console.log(time)
 // Write your code below this line to determine if it's a good idea to have a Monster Energy drink based on the current hour
 // If it's between 7am and midnight (24-hour format), print "Unleash the beast!"
 // Otherwise, print "Better stick to water."
