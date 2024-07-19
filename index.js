@@ -25,41 +25,46 @@ if (userPreference === '') {
 // You have a variable that tracks the number of Monster Energy cans left in the fridge. 
 // Use a ternary operator to print "Time to restock!" if the number is less than 5, or "We're stocked!" if the number is 5 or more.
 
-let cansLeft = 7; // Any number of cans
-if (cansLeft <= 5){
-console.log(`Time to restock!`);
-} else if (cansLeft > 5) {
-    console.log("We're stocked!");
+let cansLeft = 24; // Any number of cans
+let stock = (cansLeft <= 5) ? `Time to restock!` : "We're stocked!";
+console.log(stock)
+//if (cansLeft <= 5){
+//console.log(`Time to restock!`);
+//} else if (cansLeft > 5) {
+  //  console.log("We're stocked!");
     
-}
+//}
 
 // #### Challenge 3: Workout Intensity
 // Based on the current heart rate, determine if the user should drink a Monster Energy drink to boost their workout. 
 // If the heart rate is below 100 bpm, print "Boost needed!", otherwise, print "Energy levels are high!".
 
-let heartRate = 95; // Current heart rate in bpm
+let heartRate = 233; // Current heart rate in bpm
+let heartBeat = (heartRate < 100) ? "Boost needed!" : "Energy levels are high!";
+console.log(heartBeat)
 
-if (heartRate < 100) {
-    
-    console.log("Boost needed!");
-} else {
-    console.log("Energy levels are high!");
-}
-console.log(`'}`);
+//if (heartRate < 100) {  
+   // console.log("Boost needed!");
+//} else {
+  //  console.log("Energy levels are high!");
+//}
+//console.log(`'}`);
 
 
 // #### Challenge 4: Temperature Suitability
 // Monster Energy drinks are best served cold. Given the current temperature, use a ternary to print "Chilled to perfection!" 
 // if the temperature is below or equal to 5°C, or "Needs a cooler!" if above 5°C.
 
-let currentTemp = 4; // Current temperature in °C
+let currentTemp = 44; // Current temperature in °C
 
-if (currentTemp <= 5) {
-    console.log("Chilled to perfection!");
-} else if (currentTemp > 5) {
-    console.log("Needs a cooler!");
+let temperature = (currentTemp <= 5) ? "Chilled to perfection!" : "Needs a cooler!";
+console.log(temperature)
+//if (currentTemp <= 5) {
+  //  console.log("Chilled to perfection!");
+//} else if (currentTemp > 5) {
+  //  console.log("Needs a cooler!");
     
-}
+
 
 
 // #### Challenge 5: Late Night Coding Session
@@ -68,7 +73,7 @@ if (currentTemp <= 5) {
 // otherwise, print "Better stick to water."
 
 // Define the current hour in 24-hour format
-let currentHour = 22; 
+let currentHour = 2; 
 
 
 // Write your code below this line to determine if it's a good idea to have a Monster Energy drink based on the current hour
